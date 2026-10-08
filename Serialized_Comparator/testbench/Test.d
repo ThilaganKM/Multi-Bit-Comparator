@@ -38,7 +38,7 @@ class test: uvm_test
         uvm_info("TEST", "Starting test", UVM_MEDIUM);
         
         //Set maximum duration for which the test will run
-        phase.get_objection().set_drain_time(this, 200.nsec);
+        phase.get_objection().set_drain_time(this, 60.nsec);
 
         //Object is created
         phase.raise_objection(this);
