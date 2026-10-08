@@ -13,6 +13,7 @@ Your job is to run it, trace it in a waveform viewer, and find them.
 - Try each question yourself before opening a hint. Hints are layered: open them one at a time.
 - If you're stuck, use the **"Ask your AI"** prompt. It's written so the AI guides you instead of handing you the answer.
 - Answers and the fixed testbench are on the `solution` branch. Try not to look until you've attempted the fix yourself.
+- Stuck on a tool or setup problem (build errors, gtkwave won't open, `make` does nothing)? See **[FAQ.md](FAQ.md)**.
 
 ---
 
