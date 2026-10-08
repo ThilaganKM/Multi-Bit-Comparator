@@ -60,7 +60,7 @@ class seq: uvm_sequence!(item)
              */
             item cloned = cast(item) comp.clone;
             send_request(cloned);
-        
+            wait_for_item_done();//blocks until the driver calls the item_done(), so body() can't return immediately before the last item finishes
             //Aternate for send_request(cloned);
             //finish_item(cloned);
         }
