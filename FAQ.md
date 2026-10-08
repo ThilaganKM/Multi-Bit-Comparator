@@ -19,7 +19,12 @@ cd Multi-Bit-Comparator/Serialized_Comparator
 
 ## Building
 
-### `make: *** No rule to make target '.../import/esdl/intf/verilator/trace.d'`
+### Build fails: "No rule to make target ... trace.d"
+```
+make: *** No rule to make target '.../import/esdl/intf/verilator/trace.d', needed by 'Serialized_Comparator'.  Stop.
+```
+(`make: ***` is how `make` marks any error that stops the build. It isn't part of the problem.)
+
 Your eUVM version doesn't match the makefile.
 - **eUVM beta61 and later** ship `esdl/intf/verilator/trace` as compiled `.di` interface files, and the code is inside `libesdl-ldc-shared.so`.
   This repo's makefile is already set up for that.
