@@ -1,5 +1,12 @@
 # Multi-Bit-Comparator
 
+> ### 🐞 eUVM Bug Hunt activity
+> This fork turns the eUVM testbench for the **Serialized Comparator** into a hands-on learning activity.
+> The testbench passes with 0 errors, but it has bugs. Find them using the logs and the waveform.
+> **Start here: [ACTIVITY.md](ACTIVITY.md)**. Solutions are on the `solution` branch.
+>
+> Original design and testbench by **Soham Kapur**. The activity was added by **Thilagan KM**.
+
 **Author:** Soham Kapur
 </br> </br>
 **Description:** Variations of a generalized multi-bit/magnitude comparator with trade-offs among timing and area.

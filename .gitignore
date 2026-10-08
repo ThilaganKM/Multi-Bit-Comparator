@@ -1,0 +1,14 @@
+# Verilator / eUVM build products
+obj_dir/
+euvm_dir/
+verilator.stamp
+*.o
+*.a
+
+# Simulation outputs
+*.vcd
+*.log
+
+# Executables built in sim/
+Serialized_Comparator/sim/Serialized_Comparator
+PowerGated_Comparator/sim/Multi_Bit_Comparator_PowerGated
