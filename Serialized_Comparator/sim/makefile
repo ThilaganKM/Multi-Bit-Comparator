@@ -43,7 +43,6 @@ Serialized_Comparator: ../testbench/Serialized_Comparator.d \
 		../testbench/Environment.d \
 		../testbench/Test.d \
 	   euvm_dir/VSerialized_Comparator_euvm.d  \
-	   $(LDC2BINDIR)/../import/esdl/intf/verilator/trace.d \
 	   euvm_dir/verilated_vcd_d.o euvm_dir/verilated_d.o \
 	   euvm_dir/VSerialized_Comparator_euvm_funcs.o  \
 	   obj_dir/VSerialized_Comparator__ALL.a \
