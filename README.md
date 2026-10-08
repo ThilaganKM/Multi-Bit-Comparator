@@ -28,3 +28,13 @@
 **Serialized Multi Bit Comparator:** Fmax = 118.88 MHz
 </br>
 ![image](https://github.com/user-attachments/assets/fffdd3b8-c5a5-40d7-b859-9f90e69871de)
+
+</br> </br>
+
+## Credits and licence
+
+- **Original design and eUVM testbench:** Soham Kapur. Original repository: [SKpro-glitch/Multi-Bit-Comparator](https://github.com/SKpro-glitch/Multi-Bit-Comparator).
+- **eUVM Bug Hunt activity, testbench fixes and documentation:** Thilagan KM.
+
+This project is licensed under the [Apache License 2.0](LICENSE). The original work is published here with Soham Kapur's permission.
+See [NOTICE](NOTICE) for copyright and a summary of the changes made to the original files.

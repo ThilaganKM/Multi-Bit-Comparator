@@ -1,0 +1,18 @@
+Multi-Bit-Comparator: eUVM Bug Hunt activity
+
+Copyright 2025 Soham Kapur
+Copyright 2026 Thilagan KM
+
+This product includes the original comparator designs (RTL) and eUVM
+testbench by Soham Kapur:
+    https://github.com/SKpro-glitch/Multi-Bit-Comparator
+They are published here under the Apache License, Version 2.0, with the
+author's permission.
+
+Modifications and additions by Thilagan KM (2026):
+  - Serialized_Comparator/sim/makefile: removed the trace.d dependency
+    for eUVM beta61 and later.
+  - Added ACTIVITY.md, FAQ.md and a banner in README.md (main branch).
+  - Testbench fixes in Serialized_Comparator/testbench/Sequence.d,
+    Monitor.d and Test.d, and SOLUTIONS.md (solution branch).
+The full history of changes is in the git log.
