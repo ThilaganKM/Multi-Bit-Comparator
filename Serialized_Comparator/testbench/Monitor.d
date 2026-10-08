@@ -43,9 +43,10 @@ class monitor: uvm_monitor
     {
         super.run_phase(phase);
 
-            //Instantiating new item to fetch the[DRIVER]     8 values from interface
+            //Instantiating new item to fetch the values from interface
 
         comp = item.type_id.create("comp");
+        bool prev_solved = false; // for edge detection
         while(true)
         {
             /** 
@@ -56,7 +57,7 @@ class monitor: uvm_monitor
             //Checking for solved at each clock cycle
             wait(vif.clock.posedge());
             
-            if(vif.solved)
+            if(vif.solved && !prev_solved)//sample only on rising edge
             {
                 //Reading the input values for reference
                 comp.a = vif.a_in;
@@ -72,6 +73,7 @@ class monitor: uvm_monitor
                 //Writing the item to the scoreboard for checking
                 mon_analysis_port.write(comp);
             }
+            prev_solved = cast(bool) vif.solved;
         }
     }
 }
